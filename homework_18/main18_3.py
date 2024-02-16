@@ -16,4 +16,4 @@ def commision(func):
 def transaction(balance, amount):
     return f'Your balance was ${balance + 1}, transaction is ${amount}, commision is ${1},so balance remaining ${balance - amount}.'
 
-print(transaction(21, 10))
+print(transaction(21, 10)) 
