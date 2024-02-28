@@ -1,0 +1,32 @@
+[
+    {
+        "Name": "Cola",
+        "Price": 2.9,
+        "Quantity": 10
+    },
+    {
+        "Name": "Fanta",
+        "Price": 2.5,
+        "Quantity": 8
+    },
+    {
+        "Name": "Lays",
+        "Price": 2.95,
+        "Quantity": 12
+    },
+    {
+        "Name": "XL",
+        "Price": 3.95,
+        "Quantity": 15
+    },
+    {
+        "Name": "Red-Bull",
+        "Price": 5.1,
+        "Quantity": 6
+    },
+    {
+        "Name": "Snickers",
+        "Price": 1.9,
+        "Quantity": 14
+    }
+]
