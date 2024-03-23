@@ -9,29 +9,36 @@ import faker, json, threading
 fake = faker.Faker()
 
 # Create Data for json file
-persons = {"data" : [{"id" : i, "name" : fake.name(),"country" : fake.country(),"email" : fake.email()} for i in range(1, 101)]}
+json_data = {"data" : [{"id" : i, "name" : fake.name(),"country" : fake.country(),"email" : fake.email()} for i in range(1, 51)]}
 
 # Write data to json file
 with open("fake_data1.json", "w") as json_file:
-    json.dump(persons, json_file, indent=4)
+    json.dump(json_data, json_file, indent=4)
 
 # Re-Create Data for json file
-persons = {"data" : [{"id" : i, "name" : fake.name(),"country" : fake.country(),"email" : fake.email()} for i in range(1, 101)]}
+json_data = {"data" : [{"id" : i, "name" : fake.name(),"country" : fake.country(),"email" : fake.email()} for i in range(1, 51)]}
 
 # Write data to json file
 with open("fake_data2.json", "w") as json_file:
-    json.dump(persons, json_file, indent=4)
+    json.dump(json_data, json_file, indent=4)
 
 # Re-Create Data for json file
-persons = {"data" : [{"id" : i, "name" : fake.name(),"country" : fake.country(),"email" : fake.email()} for i in range(1, 101)]}
+json_data = {"data" : [{"id" : i, "name" : fake.name(),"country" : fake.country(),"email" : fake.email()} for i in range(1, 51)]}
 
 # Write data to json file
 with open("fake_data3.json", "w") as json_file:
-    json.dump(persons, json_file, indent=4)
+    json.dump(json_data, json_file, indent=4)
+    
+# Re-Create Data for json file
+json_data = {"data" : [{"id" : i, "name" : fake.name(),"country" : fake.country(),"email" : fake.email()} for i in range(1, 51)]}
+
+# Write data to json file
+with open("fake_data4.json", "w") as json_file:
+    json.dump(json_data, json_file, indent=4)
     
 
 
-files = ["fake_data1.json", "fake_data2.json", "fake_data3.json"]
+files = ["fake_data1.json", "fake_data2.json", "fake_data3.json", "fake_data4.json"]
 
 # Handle and Read Data from json files
 def handling_data(file):
@@ -39,7 +46,7 @@ def handling_data(file):
         data = json.load(json_file)
         
         for person in data["data"]:
-            print(f"{file} -> {person["name"]}")
+            print(f"{file} -> {person["name"]} from {person["country"]}")
 
 threads = []
 # Start Threading
