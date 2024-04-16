@@ -28,18 +28,3 @@ class ContactManager:
                 return f"Contacts:\nName: {name}, Phone Number: {phone_number}"
         else:
             return "No contacts found."
-
-# contacts_book = ContactManager()
-
-# contacts_book.add_contact("oto", 123456)
-# contacts_book.add_contact("otso", 123456)
-# contacts_book.add_contact("levan", 123456)
-# contacts_book.add_contact("nana", 123456)
-# contacts_book.add_contact("rati", 123456)
-# contacts_book.add_contact("rati", 123456)
-
-# # for name in contacts_book.contacts:
-# #     print(contacts_book.contacts[name])
-
-# print(contacts_book.display_contacts())
-# # print(contacts_book.contacts)
