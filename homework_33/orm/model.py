@@ -5,7 +5,7 @@ HOST = "localhost"
 PORT = 5432
 DATABASE = "departments"
 USER = "postgres"
-PASSWORD = "I12fuckyou"
+PASSWORD = ""
 
 engine = create_engine(f"postgresql+psycopg2://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}")
 
