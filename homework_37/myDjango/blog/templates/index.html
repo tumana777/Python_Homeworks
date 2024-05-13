@@ -1,0 +1,50 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+  <h1>This is main page</h1>
+  <div class="cards">
+    <div class="card" style="width: 18rem">
+      <img
+        src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+        class="card-img-top"
+        alt="image"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem">
+      <img
+        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
+        class="card-img-top"
+        alt="image"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem">
+      <img
+        src="https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg"
+        class="card-img-top"
+        alt="image"
+      />
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="links">
+    <p>Click here to load about page --></p>
+    <a class="btn btn-primary" href="{% url 'about' %}" role="button">About</a>
+  </div>
+</div>
+{% endblock %}
