@@ -1,0 +1,6 @@
+{% extends 'books/base.html' %} {% block title %} <title>{{book.title}}</title> {%endblock %} 
+{% block content %}
+<p>{{ book.info }}</p>
+<a href="{% url 'index' %}" class="btn btn-primary">Go Back</a>
+<a href="{% url 'delete_book' book.id %}" class="btn btn-danger">Delete Book</a>
+{% endblock %}

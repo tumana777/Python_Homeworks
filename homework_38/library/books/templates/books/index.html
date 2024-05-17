@@ -1,0 +1,16 @@
+{% extends 'books/base.html' %} 
+{% block title %} <title>Library</title> {% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap">
+    {% for book in books %}
+    <div class="card mb-5" style="width: 14rem">
+        <img src="{{ book.img_link }}" class="card-img-top" alt="deda-ena" style="height: 250px" />
+        <div class="card-body">
+            <h5 class="card-title" style="height: 100px">{{book.title}}</h5>
+            <p style="height: 40px">© {{ book.author }}</p>
+            <a href="{% url 'book_info' book.id %}" class="btn btn-primary">Full info</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
